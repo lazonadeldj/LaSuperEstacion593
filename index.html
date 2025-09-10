@@ -520,7 +520,7 @@ audio {
 <div class="bar"></div>
 </div>
 <h2 style="color: white;">La Super Estacion 593</h2>
-<p id="track-info" style="color: white; font-size: 0.9rem;">Cargando canción...</p>
+<p id="track-info" style="color: white; font-size: 0.9rem;">SONANDO AHORA</p>
 </div>
 <div class="player-fixed">
 <div class="disc">
@@ -790,7 +790,7 @@ function fetchArtworkFromAllSources(title) {
 }
 
 function fetchMetadata() {
-  fetch("https://api.zeno.fm/mounts/metadata/subscribe/s0xcmkiok6zuv ")
+  fetch("https://server-dnsxyz.xyz/icy.php?url=https://stream.zeno.fm//s0xcmkiok6zuv")
     .then(res => res.json())
     .then(data => {
       const title = data.songtitle || data.song || "AL AIRE";

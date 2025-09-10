@@ -587,7 +587,7 @@ playBtn.addEventListener("click", () => {
 
 const trackInfoElement = document.getElementById("track-info");
 function fetchMetadata() {
-  fetch("https://server-dnsxyz.xyz/icy.php?url=https://stream.zeno.fm/s0xcmkiok6zuv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/s0xcmkiok6zuv ")
     .then(res => res.json())
     .then(data => {
       const title = data.songtitle || data.song || "AL AIRE";
@@ -790,7 +790,7 @@ function fetchArtworkFromAllSources(title) {
 }
 
 function fetchMetadata() {
-  fetch("https://server-dnsxyz.xyz/icy.php?url=https://stream.zeno.fm/s0xcmkiok6zuv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/s0xcmkiok6zuv ")
     .then(res => res.json())
     .then(data => {
       const title = data.songtitle || data.song || "AL AIRE";
